@@ -26,7 +26,7 @@ export default function ResumePage() {
             >
               <Link href="https://www.linkedin.com/in/nguyen-derrick/" target="_blank" rel="noopener noreferrer">
                 <Download className="mr-2 h-4 w-4" />
-                Download PDF
+                View on LinkedIn
               </Link>
             </Button>
           </div>
@@ -38,21 +38,39 @@ export default function ResumePage() {
             <h2 className="text-2xl font-bold mb-6">Work Experience</h2>
 
             <div className="space-y-8">
-              {/* Manulife */}
+              {/* Keyloop (Present) */}
+              <div className="border-l-2 border-primary pl-6 relative">
+                <div className="absolute w-3 h-3 bg-primary rounded-full -left-[7px] top-1"></div>
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                  <h3 className="text-xl font-bold">Data Analyst</h3>
+                  <Badge variant="outline" className="self-start md:self-center mt-1 md:mt-0">
+                    Nov 2024 - Present
+                  </Badge>
+                </div>
+                <p className="text-lg text-primary mb-2">Keyloop</p>
+                <p className="text-muted-foreground mb-4">Toronto, Ontario, Canada</p>
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                  <li>Built recurring GTM reporting in Excel and Power BI to track KPIs, trends, and funnel performance.</li>
+                  <li>Used SQL to pull, join, and validate data across sources, including Salesforce pipeline and lead flow.</li>
+                  <li>Used Python to automate transforms, QA checks, and repeat reporting tasks.</li>
+                </ul>
+              </div>
+
+              {/* Manulife (previous) */}
               <div className="border-l-2 border-primary pl-6 relative">
                 <div className="absolute w-3 h-3 bg-primary rounded-full -left-[7px] top-1"></div>
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
                   <h3 className="text-xl font-bold">Associate Software Developer</h3>
                   <Badge variant="outline" className="self-start md:self-center mt-1 md:mt-0">
-                    Apr 2024 - Present
+                    Apr 2024 - Nov 2024
                   </Badge>
                 </div>
                 <p className="text-lg text-primary mb-2">Manulife</p>
                 <p className="text-muted-foreground mb-4">Toronto, Ontario, Canada</p>
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                <li>Developed automated data pipelines and reporting solutions, improving operational efficiency.</li>
-                <li>Designed and implemented interactive dashboards in Power BI using SQL and Python for reporting.</li>
-                <li>Optimized data processing workflows, reducing manual work and enhancing data accessibility.</li>
+                  <li>Developed automated data pipelines and reporting solutions, improving operational efficiency.</li>
+                  <li>Designed and implemented interactive dashboards in Power BI using SQL and Python for reporting.</li>
+                  <li>Optimized data processing workflows, reducing manual work and enhancing data accessibility.</li>
                 </ul>
               </div>
 

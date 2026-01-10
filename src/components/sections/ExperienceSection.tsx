@@ -9,15 +9,24 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 const experiences = [
   {
     id: 1,
+    title: "Data Analyst",
+    company: "Keyloop",
+    location: "Toronto, Ontario, Canada",
+    duration: "Present",
+    description: "Built recurring GTM reporting in Excel and Power BI to track KPIs, trends, and funnel performance. Used SQL to pull, join, and validate data across sources, including Salesforce pipeline and lead flow. Used Python to automate transforms, QA checks, and recurring reporting outputs, and shared clear takeaways with stakeholders.",
+    skills: ["Power BI", "SQL", "Python", "Excel", "Data Engineering"]
+  },
+  {
+    id: 2,
     title: "Associate Software Developer",
     company: "Manulife",
     location: "Toronto, Ontario, Canada",
-    duration: "Apr 2024 - Present",
+    duration: "Apr 2024 - Nov 2024",
     description: "Working on developing and maintaining web applications for financial services. Contributing to full-stack development using modern JavaScript frameworks and implementing best practices for code quality and maintainability.",
     skills: ["React", "Node.js", "TypeScript", "MongoDB", "Express"]
   },
   {
-    id: 2,
+    id: 3,
     title: "Analytics Engineer",
     company: "CIBC",
     location: "Toronto, Ontario, Canada",
@@ -26,7 +35,7 @@ const experiences = [
     skills: ["Python", "SQL", "Data Analytics", "Marketing Analytics", "ETL"]
   },
   {
-    id: 3,
+    id: 4,
     title: "Program Manager",
     company: "Ripple",
     location: "Remote",
@@ -35,7 +44,7 @@ const experiences = [
     skills: ["Program Management", "Blockchain", "Developer Relations", "Strategy"]
   },
   {
-    id: 4,
+    id: 5,
     title: "Lead XRPL Campus Ambassador",
     company: "Ripple",
     location: "Remote",
@@ -44,7 +53,7 @@ const experiences = [
     skills: ["Community Building", "Technical Education", "Event Management", "Blockchain"]
   },
   {
-    id: 5,
+    id: 6,
     title: "Data Science Analyst",
     company: "Loadlink Technologies",
     location: "Toronto, Ontario, Canada",
@@ -53,7 +62,7 @@ const experiences = [
     skills: ["Data Analysis", "Python", "Visualization", "Logistics Analytics"]
   },
   {
-    id: 6,
+    id: 7,
     title: "Systems Engineer",
     company: "Veeam Software",
     location: "Toronto, Ontario, Canada",

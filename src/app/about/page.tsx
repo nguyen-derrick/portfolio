@@ -48,7 +48,7 @@ export default function AboutPage() {
                   <div className="flex items-center justify-center w-8 h-8 rounded-full bg-indigo-100 text-indigo-800">
                     <Briefcase size={16} />
                   </div>
-                  <span>Associate Software Developer at Manulife</span>
+                  <span>Data Analyst @ Keyloop</span>
                 </div>
               </div>
 

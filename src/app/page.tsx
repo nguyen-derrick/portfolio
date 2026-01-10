@@ -33,8 +33,8 @@ const projects = [
     image: "/finance-dashboard.jpg",
     description: "A comprehensive dashboard for tracking personal finances with budgeting tools and expense analytics.",
     technologies: ["React", "TypeScript", "Chart.js", "Firebase"],
-    demoLink: "#",
-    codeLink: "#",
+    demoLink: "https://fin-sight-one.vercel.app/",
+    codeLink: "https://github.com/nguyen-derrick/FinSight",
     category: "design",
   },
   {
@@ -194,7 +194,7 @@ export default function HomePage() {
               <DynamicText />
 
               <p className="text-lg text-gray-600 max-w-2xl mt-6 border-l-4 border-blue-500 pl-4">
-                Currently <span className="font-semibold text-blue-600">@Manulife</span> | Previously <span className="font-medium text-gray-500">@CIBC, @Ripple, @Veeam Software</span>
+                Currently <span className="font-semibold text-blue-600">@Keyloop</span> | Previously <span className="font-medium text-gray-500">@Manulife, CIBC, @Ripple, @Veeam</span>
               </p>
 
               {/* Call to action buttons */}
@@ -216,7 +216,7 @@ export default function HomePage() {
                   size="lg"
                   asChild
                 >
-                  <Link href="https://github.com/nguyen-derrick" target="_blank">
+                  <Link href="https://github.com/nguyen-derrick" target="_blank" rel="noopener noreferrer">
                     <Github className="h-5 w-5" />
                     Projects
                   </Link>
@@ -292,17 +292,28 @@ export default function HomePage() {
                       size="sm"
                       asChild
                     >
-                      <a href={project.demoLink}>Demo</a>
+                      {project.demoLink && project.demoLink !== "#" ? (
+                        <a href={project.demoLink} target="_blank" rel="noopener noreferrer">Demo</a>
+                      ) : (
+                        <span className="px-3 py-1 block opacity-70 cursor-not-allowed">Demo</span>
+                      )}
                     </Button>
+
                     <Button
                       variant="outline"
                       className="border-gray-300 text-gray-700 hover:bg-gray-100 rounded-md"
                       size="sm"
                       asChild
                     >
-                      <a href={project.codeLink} className="flex items-center justify-center">
-                        <Github className="w-4 h-4 mr-2" /> Code
-                      </a>
+                      {project.codeLink && project.codeLink !== "#" ? (
+                        <a href={project.codeLink} className="flex items-center justify-center" target="_blank" rel="noopener noreferrer">
+                          <Github className="w-4 h-4 mr-2" /> Code
+                        </a>
+                      ) : (
+                        <span className="flex items-center justify-center px-3 py-1 opacity-70 cursor-not-allowed">
+                          <Github className="w-4 h-4 mr-2" /> Code
+                        </span>
+                      )}
                     </Button>
                   </div>
                 </div>
@@ -315,6 +326,7 @@ export default function HomePage() {
               href="https://github.com/nguyen-derrick"
               className="inline-flex items-center bg-gray-800 text-white px-6 py-3 rounded-full hover:bg-gray-700 transition-colors"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <Github className="mr-2 h-5 w-5" />
               View All Projects on GitHub
