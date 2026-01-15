@@ -88,7 +88,7 @@ const projects = [
     description:
       "An interactive revenue forecasting dashboard that models monthly revenue using past data and marketing spend with real time scenario controls.",
     technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-    demoLink: "https://forecastflow-neon.vercel.app",
+    demoLink: "https://v0-forecastflow.vercel.app",
     codeLink: "https://github.com/nguyen-derrick/ForecastFlow",
     category: "personal",
   },
