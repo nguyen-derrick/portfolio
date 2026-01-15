@@ -12,7 +12,7 @@ import ClientImage from "@/components/ClientImage";
 const projects = [
   {
     id: 1,
-    title: "Finance Dashboard",
+    title: "BudgetBoard Dashboard",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
