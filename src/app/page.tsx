@@ -65,7 +65,7 @@ const projects = [
   },
   {
     id: 3,
-    title: "AI Content Assistant",
+    title: "ForecastFlow",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -77,17 +77,20 @@ const projects = [
         strokeLinejoin="round"
         className="h-12 w-12"
       >
-        <circle cx="12" cy="12" r="10" />
-        <path d="M12 16v-4" />
-        <path d="M12 8h.01" />
+        <path d="M3 3v18h18" />
+        <path d="M5 15l4-5 4 3 5-8" />
+        <circle cx="9" cy="10" r="0.8" />
+        <circle cx="13" cy="13" r="0.8" />
+        <circle cx="18" cy="5" r="0.8" />
       </svg>
     ),
-    image: "/ai-assistant.jpg",
-    description: "An AI-powered content creation tool that helps users generate and optimize written content for various platforms.",
-    technologies: ["Python", "Machine Learning", "Flask", "NLP"],
-    demoLink: "#",
-    codeLink: "#",
-    category: "freelance",
+    image: "/forecastflow.png",
+    description:
+      "An interactive revenue forecasting dashboard that models monthly revenue using past data and marketing spend with real time scenario controls.",
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    demoLink: "https://forecastflow-neon.vercel.app",
+    codeLink: "https://github.com/nguyen-derrick/ForecastFlow",
+    category: "personal",
   },
   {
     id: 4,
