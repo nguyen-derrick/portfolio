@@ -31,10 +31,10 @@ const projects = [
       </svg>
     ),
     image: "/finance-dashboard.jpg",
-    description: "A comprehensive dashboard for tracking personal finances with budgeting tools and expense analytics.",
+    description: "A comprehensive personal finance dashboard for tracking spending, budgets, and expense analytics.",
     technologies: ["React", "TypeScript", "Chart.js", "Firebase"],
-    demoLink: "https://fin-sight-one.vercel.app/",
-    codeLink: "https://github.com/nguyen-derrick/FinSight",
+    demoLink: "https://budgetboard.vercel.app/",
+    codeLink: "https://github.com/nguyen-derrick/BudgetBoard",
     category: "design",
   },
   {
